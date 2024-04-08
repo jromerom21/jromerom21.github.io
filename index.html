@@ -1,11 +1,323 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba1</title>
+    <title>Proyecto Final</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/f29dca80f0.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+
 </head>
+
 <body>
-    <h1>Hola Mundo!</h1>
+
+    <!-- comentario: inicia la barra de navegacion, se definien los colores genericos de boostrap y aliniacion-->
+    <nav class="navbar navbar-expand-lg bg-primary-subtle fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+
+            <!-- comentario: imagen o logo -->
+            <a class="navbar-brand" href="#"></a>
+
+            <!-- comentario: menu de hamburguesa-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- comentario: lista de items del menu-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#educacion">Educación</a>
+                    </li>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Experiencia</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portafolio">Portafolio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#forkear">Forkear</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- seccion inicio-->
+    <section id="inicio" class="seccion img_fondo">
+        
+            <div class="row g-3 my-3 px-5 ini_text">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <h1 class="text-center formato_h1"> <span class="formato_v1">CV</span>JORGE ROMERO</h1>
+                    <p class="formato_p2">Actualmente: <span id="element"></span></p>
+                    <p class="text-center formato_p" >“Titulado de Ingeniería en Información y Control de Gestión, con experiencia de jefatura en unidades de insumos, estadísticas y acreditación socioeconómica del ministerio de Educación. He sido responsable de procesos de postulación a ayudas estudiantiles y de intercambio de información con organismos públicos. Además, he impartido cursos de control de gestión en la Universidad de Chile y he trabajado en la Dirección de Control de Gestión de la Universidad Católica, donde he evaluado indicadores corporativos y controlado presupuestos. Actualmente curso el Bootcamp Desarrollador Full Stack JavaScript de Desafío-Latam.”</p>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+
+    </section>
+
+    <!-- seccion educación-->
+    <section id="educacion" class="seccion d-flex align-items-center bg-primary-subtle">
+        <div class="row g-3 my-3 px-5 py-3 logo_alig">
+            <div class="col-md-12">
+                <h2 class="text-center text-body">Educación</h2>
+            </div>
+            
+            <div class="row border border-dark mx-0 px-0 my-3">
+
+                <div class="col-md-2 d-flex align-items-center px-0 py-5">
+                    <div class="text-center logo_alig">
+                        <i class="fa fa-pencil-square-o fs-2" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-md-10 px-0 py-5">
+                    <h3 class="text-body">Académia DesafíoLatam</h2>
+                        <h4 class="text-body">2024</h4>
+                        <h4 class="text-body">Cursando Programa Desarrollo Full Stack JavaScript</h4>
+                </div>
+
+            </div>
+            <div class="row border border-dark mx-0 px-0 my-3">
+                <div class="col-md-2 d-flex align-items-center px-0 py-5">
+                    <div class="text-center logo_alig">
+                        <i class="fa fa-pencil-square-o fs-2" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-md-10 px-0 py-5">
+                    <h3 class="text-body">Universidad Unir de Mexico</h2>
+                        <h4 class="text-body">2023</h4>
+                        <h4 class="text-body">Titulado en la Maestría en Análisis y visualización de Datos Masivos</h4>
+                </div>
+            </div>
+
+            <div class="row border border-dark mx-0 px-0 my-3">
+                <div class="col-md-2 d-flex align-items-center px-0 py-5">
+                    <div class="text-center logo_alig">
+                        <i class="fa fa-pencil-square-o fs-2" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-md-10 px-0 py-5">
+                    <h3 class="text-body">Universidad de Chile</h2>
+                        <h4 class="text-body">2006</h4>
+                        <h4 class="text-body">Titulado de la carrera de Ingeniería en Información y Control de Gestión</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- seccion experiencia-->
+    <section id="experiencia" class="container-fluid px-5 py-3 seccion bg-primary-subtle auto" data-bs-theme="dark">
+        <div class="row g-3 mt-3 p-3">
+            <div class="col-md-12">
+                <h2 class="text-center text-white">Experiencia</h2>
+            </div>
+        </div>
+        <div class="row g-3 text-white">
+            <div class="col-md-4">
+                <h2>MINISTERIO DE EDUCACIÓN</h2>
+                <h3>Departamento de Financimiento Estudiantil</h3>
+                <h4>2010 - 2018</h4>
+                <p>Realice múltiples funciones dentro del departamento de Financiamiento Estudiantil, entre ellas puedo mencionar:</p>
+                <p>(2010-2012), jefe de la unidad de estadísticas y presupuesto del departamento.</p>
+                <p>(2012-2015), jefe de la unidad de acreditación socioeconómica, responsable de un equipo de 15 personas.</p>
+                <p>Responsable del proceso de postulación a las ayudas estudiantiles por medio del Formulario FUAS (alrededor de 650 mil postulación en un periodo de dos meses).</p>
+                <p>Responsable de llevar el proceso de acreditación socioeconómico en las instituciones de educación superior</p>
+                <p>Responsable de llevar el proceso de apelación de todas las ayudas estudiantiles</p>
+                <p>Responsable del intercambio de información con organismos públicos como el Registro Civil, Ministerio de Desarrollo Social, Servicio de Impuestos Internos, etc.</p>
+                <p>(2015-2018), jefe unidad de información e insumo, responsable de un equipo de multidisciplinario de 5 personas. La principal labor de esta unidad es velar por la integridad de la información presente en todas las bases de datos</p>
+            </div>
+            <div class="col-md-4">
+                <h2>UNIVERSIDAD DE CHILE</h2>
+                <h3>Facultad de Económia y Negocios</h3>
+                <h4>2008 - 2012</h4>
+                <p>(2009 - 2010), Profesor del curso “Gestión del desempeño y rendimientos basado en tecnología” del Magister Control de Gestión, curso dictado en conjunto con Christian Cancino para la escuela de posgrado</p>
+                <p>(2010 - 2012), Profesor del curso “SIA300 Sistemas de Información Administrativos” de la escuela de pregrado.</p>
+                <p>(2008 - 2009), Ayudante de Investigacion, en el Departamento de Control de Gestión y Sistemas de Información</p>
+            </div>
+            <div class="col-md-4">
+                <h2>PONTIFICIA UNIVERSIDAD CATOLICA</h2>
+                <h3>Vicerrectoria Económica</h3>
+                <h4>2007 - 2010</h4>
+                <p>Desempeñe labores en la Dirección de Control de Gestión dependiente de la  vicerrectoría económica, cargo coordinador de control de gestión, entre las funciones desempeñadas se destacan: evaluación de indicadores corporativos,  control presupuestario de todas las unidades de la universidad, implementación software de BI, evaluación de nuevos proyectos académicos, evaluación financiera  de inversiones en activos, revisión de estados financieros y revisiones periódicas al flujo de caja de todas las unidades de la universidad.</p>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- seccion portafolio-->
+    <section id="portafolio" class="container-fluid px-5 py-3 seccion bg-primary-subtle auto">
+        <div class="row g-3 mt-3 p-3">
+            <div class="col-md-12">
+                <h2 class="text-center text-body">Portafolio</h2>
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/assets/img/proyecto2.PNG" class="card-img-top img_galeria" alt="imagen PuroColor">
+                    <div class="card-body">
+                        <h5 class="card-title text-body fs-4">PuroColor</h5>
+                        <p class="card-text mb-0 text-secondary fs-5">Segundo Desafío realizado en DesafioLatam, este
+                            corresponde a una maqueta de tienda donde se pueden comprar zapatillas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/assets/img/proyecto3.PNG" class="card-img-top img_galeria" alt="imagen de iguanas">
+                    <div class="card-body">
+                        <h5 class="card-title text-body fs-4">Proyecto Iguanas</h5>
+                        <p class="card-text mb-0 text-secondary fs-5">Tercer Desafío realizado en DesafioLatam, este
+                            corresponde a la contruccion de una landing page con información de Iguanas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/assets/img/proyecto4.PNG" class="card-img-top img_galeria" alt="imagen desafio cuppon">
+                    <div class="card-body">
+                        <h5 class="card-title text-body fs-4">Cuppon</h5>
+                        <p class="card-text mb-0 text-secondary fs-5">Cuarto Desafío realizado en DesafioLatam, este
+                            corresponde a la contruccion de una landing page con información de Cupones de Descuento.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion Forkear y Commit-->
+    <section id="forkear" class="seccion d-flex align-items-center bg-primary-subtle" data-bs-theme="dark">
+        <div class="row g-3 my-3 px-5 py-3 text-white logo_alig">
+            <div class="col-md-12">
+                <h2 class="text-center">Forkear y Commit</h2>
+            </div>
+            
+            <div class="row g-3 border border-dark mx-0 px-0 my-3">
+
+                <div class="col-md-6 px-0 py-5 text-center">
+                    <h2>JAVIERA VENEGAS CASTILLO</h2>
+                    <p>Realice Fork y Commit al proyecto personal de Javiera</p>
+                    <a class="btn btn-info" href="https://javivenegas.github.io" target="_blank" role="button">https://javivenegas.github.io/</a>
+                    <p>su directorio</p>
+                    <a class="btn btn-info" href="https://github.com/JaviVenegas" target="_blank" role="button">https://github.com/JaviVenegas/</a>
+                    <p>mi copia</p>
+                    <a class="btn btn-info" href="https://github.com/jromerom21" target="_blank" role="button">https://github.com/jromerom21/</a>
+                </div>
+                <div class="col-md-6 px-0 py-5 text-center">
+                    <h2>Alfredo Saavedra</h2>
+                    <p>Realice Fork y Commit al proyecto personal de Alfredo</p>
+                    <a class="btn btn-info" href="https://teoisnotdead.github.io/index.html" target="_blank" role="button">teoisnotdead.github.io/</a>
+                    <p>su directorio</p>
+                    <a class="btn btn-info" href="https://github.com/teoisnotdead" target="_blank" role="button">https://github.com/teoisnotdead/</a>
+                    <p>mi copia</p>
+                    <a class="btn btn-info" href="https://github.com/jromerom21" target="_blank" role="button">https://github.com/jromerom21/</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- comentario: inicia seccion del Contacto-->
+    <section id="contacto" class="bg-primary-subtle text-white mt-0 px-5 py-5">
+        <div>
+            <form>
+                <legend class="text-center">
+                    <h2>Contacto</h2>
+                </legend>
+                <div class="mb-3">
+                    <input type="text" id="disabledTextInput" class="form-control font-weight-light"
+                        placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                    <input type="text" id="disabledTextInput" class="form-control font-weight-light"
+                        placeholder="Correo Electrónico">
+                </div>
+                <div class="mb-3">
+                    <textarea id="message" cols="30" rows="10" placeholder="Ingrese su mensaje aquí"
+                        class="form-control font-weight-light"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-light btn-lg">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- comentario: inicia seccion del footer-->
+    <footer class="text-white mt-0 px-5 py-5 bg-primary-subtle" data-bs-theme="dark">
+        <div class="row">
+            <div class="col text-center pb-3">
+                <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+                <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-12">
+                <p class="text-center">Todos los derechos reservados ®Jorge Romero.</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Estudiando','en Académia Desafío-Latam','Desarrollador full-stack'],
+          typeSpeed: 100,
+          backSpeed: 80,
+          loop: true
+        });
+        </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-55DFZ91HMD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-55DFZ91HMD');
+    </script>
+
 </body>
+
 </html>
