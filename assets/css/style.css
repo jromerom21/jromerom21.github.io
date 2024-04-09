@@ -30,7 +30,7 @@ body {
 }
 
 .seccion {
-    height: 100vh;
+    height:max-content;
   }
 
 .ini_text {
