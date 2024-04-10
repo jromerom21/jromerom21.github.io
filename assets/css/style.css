@@ -79,5 +79,7 @@ body {
   }
 
   .auto {
-    overflow: auto;
+    /*overflow: auto; */
+    overflow-y: auto;
+    overflow-x: hidden;
   }
