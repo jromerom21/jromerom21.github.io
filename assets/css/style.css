@@ -30,7 +30,7 @@ body {
 }
 
 header {
-  background: black;
+  background: rgb(81, 30, 84);
   color: white;
   grid-area: header;
   padding: 1rem;
@@ -53,6 +53,13 @@ header h1 {
   gap: 1rem;
 }
 
+.cabecera_grupo1 i {
+  font-size: 40px;
+}
+
+.cabecera_grupo1 i {
+  animation: colores 6s infinite linear;
+}
 
 .cabecera_grupo2 {
   font-size: 35px;
@@ -63,7 +70,7 @@ header h1 {
 }
 
 nav {
-  background: rgb(217, 215, 215);
+  background: rgb(244, 214, 91);
   grid-area: nav;
 }
 
@@ -106,15 +113,30 @@ main {
   height: 310px;
   object-fit: cover;
   vertical-align: bottom;
+  filter: grayscale(100%);
+  transition: filter 1s;
 }
 
 .tarjeta {
+  overflow: hidden;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .tarjeta:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.tarjeta:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.tarjeta:hover button {
+  color: red;
+  background-color:  rgb(244, 214, 91);
+  border: rgb(244, 214, 91);
 }
 
 .contenido_tarjeta {
@@ -133,9 +155,7 @@ main {
   font-size: 16px;
 }
 
-.contenido_tarjeta button:hover {
-  color:red;
-}
+
 
 aside {
   background: rgb(217, 215, 215);
@@ -162,18 +182,20 @@ aside ul {
 aside ul li {
   display: flex;
   gap: 0.5rem;
-}
-
-aside ul li {
+  position: relative;
+  overflow: hidden;
   color: rgb(79, 79, 81);
   font-weight: bold;
   font-size: 17px;
   margin-bottom: 0.5rem;
+  transition: all 0.1s linear 0.1s;
+
 }
 
 aside ul li:hover {
-  color:white;
-  text-decoration: underline;
+  background: rgb(244, 214, 91);
+  font-size: 19px;
+  color: red;
 }
 
 .numero {
@@ -181,7 +203,7 @@ aside ul li:hover {
 }
 
 footer {
-  background: black;
+  background: rgb(81, 30, 84);
   color: white;
   grid-area: footer;
   padding: 1rem;
@@ -258,4 +280,15 @@ footer {
   .container {
     grid-template-columns: repeat(3,1fr);
   }
+}
+
+@keyframes colores {
+  0%   { color: red; }       /* Raíz */
+  14%  { color: orange; }    /* Sacro */
+  28%  { color: yellow; }    /* Plexo Solar */
+  42%  { color: green; }     /* Corazón */
+  57%  { color: blue; }      /* Garganta */
+  71%  { color: indigo; }    /* Tercer Ojo */
+  85%  { color: violet; }    /* Corona */
+  100% { color: red; }       /* Vuelve al inicio */
 }
